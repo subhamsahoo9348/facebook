@@ -1,0 +1,13 @@
+.image{
+    display: inline-block;
+}
+
+.about{
+    position: absolute;
+    display: inline-block;
+    height: 400px;
+    width: 1450px;
+}
+.name,.email,.number{
+    padding: 40px 0px;
+}

@@ -1,0 +1,45 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<!-- <main>
+    <% for(user of users) { %>
+        <div class="user">
+            <img src="<%= user.imageUrl %>" alt=""><br>
+            Name:<%= user.name %><br>
+            Number:<%= user.number %><br>
+            DOB:<%= user.dob %><br>
+            EMAIL:<%= user.email %><br>
+            Gender:<%= user.gender %><br>
+            <form action="/admin/update-user/<%= user.id %>" method="get"><button class="btn btn-primary">UPDATE</button></form>
+            <form action="/admin/delete-user/<%= user.id %>" method="post"><button class="btn btn-primary">DELETE</button></form>
+        </div>
+    <% } %>
+</main> -->
+
+<main>
+    <% if (users.length > 0) { %>
+        <div class="grid">
+            <% for (let user of users) { %>
+                <article class="card product-item" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+                    <header class="card__header">
+                        <h1 class="product__title"><%= user.name %></h1>
+                    </header>
+                    <div class="card__image">
+                        <img src="<%= user.imageUrl %>"
+                            alt="<%= user.name %>">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="product__price">Number:<%=  user.number %></h2>
+                        <h2 class="product__description">Email:<%= user.email %></h2>
+                    </div>
+                    <div class="card__actions">
+                        <form action="/admin/update-user/<%= user.id %>" method="get"><button class="btn btn-outline-secondary" ><i class="fa-solid fa-pencil"></i></button></form>
+                        <form action="/admin/delete-user/<%= user.id %>" method="post"><button type="submit" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button></form>
+                    </div>
+                </article>
+            <% } %>
+        </div>
+    <% } else { %>
+        <h1>No Products Found!</h1>
+    <% } %>
+</main>
+<%- include('include/end') %>

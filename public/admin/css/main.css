@@ -1,0 +1,163 @@
+*{
+
+    margin: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    .main-header .main-nav{
+    
+    height: 65px;
+    
+    background-color: #2481ce;
+    
+    }
+    
+    .nav-items{
+    
+    padding: 0%;
+    
+    }
+    
+    .item{
+    
+    display: inline-block;
+    
+    padding: 10px 33px;
+    
+    }
+    
+    .item a {
+    
+    color: white;
+    
+    font-size: 2rem;
+    
+    }
+    
+    .item a :hover, .item a :active{
+    
+    color: #1B9CFC;;
+    
+    }
+
+.error {
+    align-items: center;
+    color: red;
+}
+
+.user {
+    padding-left: 15px;
+    border-radius: 20px;
+    height: auto;
+    width: 500px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card__header,
+.card__content {
+    padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+    margin: 0;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__image img {
+    width: 100%;
+}
+
+.card__actions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__actions button,
+.card__actions a {
+    margin: 0 0.25rem;
+}
+
+.btn {
+    font: inherit;
+    border: 1px solid #00695c;
+    color: #00695c;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #00695c;
+    color: #0652DD;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    font-size: small;
+}
+
+.card__actions a {
+    text-decoration: none;
+}
+.addfriend{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 800px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.addfriend img{
+    width: 90px;
+    height: 80px;
+}
+
+.addfriend .name{
+    font-size: large;
+}
+
+.addfriend .add{
+    width: 100px;
+}
+.addfriend .add button{
+    width: 100px;
+    border-radius: 20px;
+    transition-duration: 350ms;
+}
+
+/* i:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+} */

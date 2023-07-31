@@ -1,0 +1,18 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<main>
+    <% friend.forEach(user =>{ %>
+        <div class="addfriend">
+            <img src= <%= user.imageUrl %> >
+            <div class="name">
+                <%= user.name %>
+            </div>
+            <div class="add">
+                <form action="/addfriend/<%= user.id %>" method="POST"><button class="btn btn-outline-primary" type="submit" >ADD</button></form>
+            </div>
+        </div>
+
+        <% } ) %>
+</main>
+
+<%- include('include/end') %>

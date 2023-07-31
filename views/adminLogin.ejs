@@ -1,0 +1,16 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<form action="/admin/login" method="post"  class="form">
+    <div class="user-name">
+        ADMIN NAME:<br>
+    <input type="text" name="name">
+    </div>
+    <div class="pass">
+        PASSWORD:<br>
+    <input type="password" name="password">
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-outline-info" type="submit">LOG IN</button>
+      </div>
+</form>
+<%- include('include/end') %>

@@ -1,0 +1,29 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<form action="/signup" method="post" class="form"> 
+  <div class="user-name">
+    Name:
+  <br><input type="text" name="name">
+  </div>
+  <div class="mail">
+    Mail:
+  <br><input type="email" name="email">
+  </div>
+  <div class="profile">
+  Profile:<br>
+  <input type="text" name="imageUrl">
+  </div>
+  <div class="number">Number:<br><input type="tel"  name="number"></div>
+  <div class="dob">
+    DOB:<br><input type="date"  name="dob">
+  </div>
+  <div class="gender">
+    Gender:<input  type="radio" name="gender"value="male" checked>Male
+  <input  type="radio" name="gender"  value="female">Female
+  </div>
+  <div class="pass">Password:<br><input type="password" name="password"></div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-outline-primary" type="submit" style="border-radius: 25px;">SIGN IN</button>
+  </div>
+  </form>
+<%- include('include/end') %>

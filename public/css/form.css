@@ -1,0 +1,17 @@
+.form{
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    margin-left:680px;
+    margin-top: 180px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.user-name,.pass,.email,.number,.profile,.dob,.gender,.name{
+    padding: 12px;
+}
+
+.b{
+    padding: 20px;
+}

@@ -1,0 +1,24 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<div class="image"><img src='<%= user.imageUrl %>''></div>
+<div class="about">
+    <div class="name">NAME: <%= user.name %></div>
+    <div class="email">EMAIL: <%= user.email %></div>
+    <div class="number">NUMBER: <%= user.number %></div>
+</div>
+<div class="centered" style="text-align: center; justify-content: center;">
+    <div class="friends">FRIENDS</div>
+<% friend.forEach(u =>{ %>
+    <div class="addfriend">
+        <img src= <%= u.imageUrl %> >
+        <div class="name">
+            <%= u.name %>
+        </div>
+        <div class="add">
+            <form action="/removefriend/<%= u.fid %>" method="post"><button class="btn btn-outline-primary" type="submit">REMOVE</button></form>
+        </div>
+    </div>
+
+    <% } ) %>
+</div>
+<%- include('include/end') %>

@@ -1,0 +1,18 @@
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-items">
+                <% if(isAuth) {%>
+                <li class="item"><a href="/home" id="<%= path === '/home' ? 'active' : '' %>"><i class="fa-solid fa-house"></i></a></i></li>
+                <li class="item"><a href="/video" id="<%= path === '/video' ? 'active' : '' %>"><i class="fa-solid fa-video"></i></a></i></li>
+                <li class="item"><a href="/friends" id="<%= path === '/friend' ? 'active' : '' %>"><i class="fa-solid fa-user-group"></i></a></li>
+                <li class="item"><a href="/profile" id="<%= path === '/profile' ? 'active' : '' %>"><i class="fa-solid fa-user"></i></a></li>
+                <li class="item"><a href="/admin/login" id="<%= path === '/admin' ? 'active' : '' %>"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+                <li class="item"></li><input type="text" placeholder="username"></li>
+                <% } %>
+                <li class="item" style = "margin-left:650px;"><a href="/login" id="<%= path === '/login' ? 'active' : '' %>"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li class="item" ><a href="/signup" id="<%= path === '/signup' ? 'active' : '' %>"><i class="fa-sharp fa-solid fa-user-plus"></i></a></li>
+                <li class="item"><a href="/logout" id="<%= path === '/logout' ? 'active' : '' %>" style="text-decoration: none;">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>

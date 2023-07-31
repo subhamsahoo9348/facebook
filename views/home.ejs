@@ -1,0 +1,15 @@
+<%- include('include/head') %>
+<%- include('include/navigation') %>
+<main>
+    <% user.forEach(u=>{ %>
+        <div class="home" >
+            <img src="<%= u.imageUrl %>" alt="<%= u.name %>">
+            <div class="area">
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-comment"></i></a>
+                <a href=""><i class="fa-solid fa-share"></i></a>
+            </div>
+        </div>
+    <% }) %>
+</main>
+<%- include('include/end') %>
